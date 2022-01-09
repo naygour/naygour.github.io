@@ -43,68 +43,47 @@
     font-size: 1.5rem;
     color: #E14548;
   }
-  .profil {
+  .profil, .language {
     display: flex;
     padding: 6rem 1rem 1rem 0;
     margin-bottom: 3rem;
   }
-  .dummy-profil {
+  .dummy-profil, .dummy-language{
     padding: 2rem 2rem 2rem 0;
   }
-  .profil img {
-    width: 50%;
+  .profil img, .diplome img {
+    width: 100%;
+    padding: 2rem;
   }
-  .diplome {
+  .diplome{
     padding: 1rem;
     margin-bottom: 3rem;
   }
-  .diplome h1 {
+  .diplome h1{
     text-align: right;
     padding-right: 25%;
   }
-  .diplome img {
-    width: 40%;
-    padding: 2rem;
-  }
-  .dummy-diplome {
+  .dummy-diplome{
     display: flex;
   }
-  .why {
+  .why{
     padding: 2rem;
     margin: 2rem;
     background: rgba(255, 66, 52, 0.287);
   }
-  .why h1 {
-    text-align: center;
-    padding: 2rem;
-  }
-  .why img {
+  .why img{
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .language {
-    display: flex;
-    padding: 6rem 1rem 1rem 0;
-    margin-bottom: 3rem;
-  }
   .language h1{
     text-align: left;
   }
-  .language div {
+  .language div{
     width: 60%;
   }
-  .dummy-language {
-    padding: 2rem 2rem 2rem 0;
-  }
-  .box-container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
-    padding: 10px;
-  }
-  .project h1{
+  .project h1, .why h1{
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
@@ -120,11 +99,7 @@
     height: 30%;
     width: 30%;
   }
-  .box{
-    text-align: center;
-    padding: 2rem;
-  }
-  .copyright{
+  .copyright, .download, .box{
     padding: 2rem; 
     text-align: center;
   }
@@ -132,20 +107,38 @@
     font-weight: bold;
     font-style: italic;
   }
-  .download{
-    text-align: center;
-  }
   @media screen and (min-width: 1000px) {
     main {
       width: 75%;
       margin: 0 auto;
     }
+
+    .box-container{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 10px;
+      padding: 10px;
+    }
     
   }
   @media screen and (max-width: 999px) {
     main {
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
+
+    .project, .profil,.language,.diplome{
+      display:inline;
+      padding: 2rem 0 1rem 0;
+      margin-bottom: 1rem;
+    }
+    .language h1, .dummy-language,.dummy-diplome{
+      display: inline;
+      text-align: center;
+    }
+    .profil img, .diplome img{
+      height: 150px;
+    }
+    
   }
 
 * {
@@ -280,7 +273,8 @@ nav {
   }
 
   .btn {
-      font-size: 2rem;
+      display:block;
+      margin: 2rem auto;
   }
 
   .open .menu {
