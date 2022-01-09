@@ -1,0 +1,24 @@
+{
+  "name": "basic-project-file",
+  "version": "1.0.0",
+  "description": "Avec : \r * des photos randoms\r * une navbar toute faite\r * un body tout fait\r * des sons\r * des svg\r * jQuery et Bootstrap reliés",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./main.scss:./style.css",
+    "bs": "browser-sync start --proxy localhost/**  --files '**/*' --no-notify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustFS/basic-project-file.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustFS/basic-project-file/issues"
+  },
+  "homepage": "https://github.com/JustFS/basic-project-file#readme",
+  "dependencies": {
+    "swiper": "^7.3.1"
+  }
+}

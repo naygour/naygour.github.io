@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <title>Portfolio</title>
+
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios/50/000000/development-skill.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fas fa-file-code"></i>
+        </div>
+        <div class="toggle">
+            <i class="fas fa-bars ouvrir"></i>
+            <i class="fas fa-times fermer"></i>
+        </div>
+        <ul class="menu">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#diplome">Diplômes</a></li>
+            <li><a href="#language">Langages</a></li>
+            <li><a href="#project">Projets</a></li>
+            <li><a href="#why">Pourquoi moi ?</a></li>
+            <!--<li><button class="btn" onclick="window.location.href='#adapt'">Adapt</button></li>-->
+            <li><button class="btn btn-secondary"
+                onclick="window.location.href='https://github.com/naygour'">
+                <i class="fab fa-github"></i> GitHub</button>
+            </li>
+            <li><button class="btn btn-secondary" 
+              onclick="window.location.href='https://www.linkedin.com/in/théo-bruwaert-b9250b17a/'">
+              <i class="fab fa-linkedin"></i> Linkedin</button>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="animation">
+    <h3>Théo</h3><h3 id="target"></h3>
+  </div>
+  
+  
+  <main>
+  <!--section profil start-->
+    <section class="profil" id="profil">
+      <div class="dummy-profil">
+      <h1>Jeune Développeur libre comme une donnée ..</h1>
+        <p>Depuis tout petit, ma curiosité a toujours dicté ma vie. </br>
+        Voulant toujours savoir comment les choses sont faites, comment
+        les objets marchent cela était pour moi une évidence de choisir à travers mes études la filière de la technologie et surtout de
+        la programmation. Ces différents choix m’ont mené, aujourd’hui, à me faire une place dans le monde du développement web
+        et cela commence aujourd’hui grâce à ce portfolio montrant mes capacités acquises dans mon parcours scolaire et
+        professionnel. </p>
+      </div>
+      <img src="/media/svg/profil.svg" alt="Profil">
+
+    </section>
+  <!--section profil end-->
+
+  <!--section diplome start-->
+    <section class="diplome" id="diplome">
+      <h1>Diplômes</h1>
+      <div class="dummy-diplome">
+        <img src="/media/svg/grown.svg" alt="Diplôme">
+        <div>
+          <p>Avec ces quatres formations, mon apprentissage sur le développement web a su se fortifier et s'enrichir de nouvelles connaissances.</p>
+          <br/>
+          <details>
+            <summary>
+              <h2>Professionnelle – IUT Lens<br/><a class="date">2019-2020</a></h2>
+            </summary>
+            <p>Licence professionnelle métiers de l’informatique : Conception, développement et test de logiciels - développement informatique et outils collaboratifs.</p>
+          </details>
+          <details>
+            <summary>
+              <h2>LICENCE – Lille 1<br/><a class="date">2018-2019</a></h2>
+            </summary>
+            <p>Licence SESI (Sciences Exactes et Sciences pour l’ingénieur) option Informatique.</p>
+          </details>
+          <details>
+            <summary>
+              <h2>BREVET TECHNICIEN SUPÉRIEUR – Lycée Guy Mollet<br/><a class="date">2016-2018</a></h2>
+            </summary>
+            <p>BTS SIO (Services informatiques aux organisations) option SLAM, avec une certification en mathématiques algorithmiques.</p>
+          </details>
+          <details>
+            <summary>
+              <h2>BACCALAURÉAT – Lycée Albert Châtelet<br/><a class="date">2014-2016</a></h2>
+            </summary>
+            <p>Baccalauréat <abbr title="Science Technologique de l'Industrie et du Développement Durable"> STI2D</abbr> option SIN (Système information numérique) mention Bien.</p>
+          </details>
+        </div>
+      </section>
+  <!--section diplome end-->
+
+  <!--section language start-->
+    <!-- Swiper -->
+    <section class="language" id="language">
+      <div class="dummy-language">
+        <h1>Langages</h1>
+          <p> Durant mes années scolaires et mes différents stages, j'ai pu apprendre de nombreux languages. Ces languages m'ont permis de me diversifier 
+            et de voir de nombreux aspects du développement tel que la conception de base de données, de la conception d'application web ou mobile mais 
+            aussi de gérer des données existantes.  
+          </p><br/>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/media/svg/html.svg" alt="HTML"/>
+          </div>
+          <div class="swiper-slide">
+          <img src="/media/svg/css.svg" alt="CSS"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/js.svg" alt="JavaScript"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/php.svg" alt="PhP"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/mysql.svg" alt="Mysql"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/java.svg" alt="Java"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/python.svg" alt="Python"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="/media/svg/sap_abap.svg" alt="SAP / ABAP" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  <!--section language end-->
+
+  <!--section project start-->
+    <section class="project" id="project">
+
+      <h1>Projets</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="/media/svg/grece.svg" alt="Projet Grèce" class="svg-project">
+          <h3>Grèce antique</h3>
+          <p>Site vitrine sur l'histoire de la Grèce antique.</p>
+          <button class="btn" onclick="window.location.href='https://codepen.io/naygour/pen/MWEVvLQ'"><i class="fab fa-codepen"></i>
+          Read more</button>
+        </div>
+
+        <div class="box">
+          <img src="/media/svg/tacojo.svg" alt="Projet Tacojo" class="svg-project">
+          <h3>Tacojo</h3>
+          <p>Application web pour gèrer plusieurs profil de patient atteint du VIH au Sénégal.</p>
+          <button class="btn" onclick="window.location.href='https://github.com/naygour/tacojo'"><i class="fab fa-github"></i>
+          Read more</button>
+        </div>
+
+        <div class="box">
+          <img src="/media/svg/partylite.svg" alt="Projet PartyLite" class="svg-project">
+          <h3>PartyLite</h3>
+          <p>Réalisation d'un flyers pour une porte de vente de bougies parfumées pour une vendeuse de la marque PartyLite.</p>
+          <button class="btn" onclick="window.location.href='../assets/pdf/partylite.pdf'"><i class="fas fa-file-download"></i>
+            Read more</button>
+        </div>
+
+        <div class="box">
+          <img src="/media/svg/tree.svg" alt="Projet Maraicher et jardinier" class="svg-project">
+          <h3>Maraicher</h3>
+          <p>Application web en cours de création pour montrer les différentes offres qu'un jeune maraicher / jardinier peut vendre.</p>
+          <button class="btn" onclick="window.location.href='https://github.com/naygour/maraicher'"><i class="fab fa-github"></i>
+            Read more</button>
+        </div>
+
+      </div>
+    </section>
+  <!--section project end-->
+
+  <!--section why start-->
+    <section class="why" id="why">
+      <h1>Pourquoi moi ?</h1>
+      <p>Toujours pas convaincu ? Est-ce ma grande curiosité, ma motivation ou encore bien mon goût prononcé pour
+      l’originalité qui me font défaut ?
+      De mon avis, avec les différents langages et outils que je pratique, mon profil peut tout-à-fait correspondre à votre
+      demande.
+      <span class="citation">Un grand pouvoir implique de grandes responsabilités</span>, mon pouvoir étant de ne pas abandonner dans la difficulté.
+      </br> 
+      Depuis la fin de mes études, je n’ai pas abandonné l’envie d’être développeur et dès que c’est possible je m’exerce pour ne pas
+      perdre un maximum de mes compétences.</p>
+      <img src="/media/svg/1.svg" alt="Premier choix">
+      <div class="download"><button class="btn" onclick="window.location.href='../assets/pdf/CV-BRUWAERT-FR.pdf'"><i class="fas fa-file-download"></i> Télécharger CV en français</button>
+                            <button class="btn" onclick="window.location.href='../assets/pdf/CV-BRUWAERT-EN.pdf'"><i class="fas fa-file-download"></i> Télécharger CV en anglais</button>
+      </div>
+    </section>
+  <!--section why end-->
+
+  </main>
+
+  <script src="./assets/jquery.min.js" type="text/javascript" ></script>
+  <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./script.js" type="text/javascript" ></script>
+
+  <footer>
+    <div class="copyright">
+      <h3>©Copyright BRUWAERT Théo - 2021</h3>
+    </div>
+  </footer>
+  
+</body>
+
+
+
+</html>
