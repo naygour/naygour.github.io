@@ -10,7 +10,7 @@ toggle.addEventListener('click', function() {
 //================================================ Animation Lettre =====================================
 
 const target = document.getElementById("target");
-let array = ["Bruwaert", "innovant", "simplicité", "originalité"];
+let array = ["Bruwaert", "Innovant", "Simplicité", "Originalité"];
 let wordIndex = 0;
 let letterIndex = 0;
 
