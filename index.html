@@ -46,7 +46,7 @@
   </header>
 
   <div class="animation">
-    <h3>Théo</h3><h3 id="target"></h3>
+    <h3 class="name">Théo</h3><h3 id="target"></h3>
   </div>
   
   
@@ -151,36 +151,94 @@
       <h1>Projets</h1>
 
       <div class="box-container">
-        <div class="box">
+        <div class="box" id="greece">
           <img src="/media/svg/grece.svg" alt="Projet Grèce" class="svg-project">
           <h3>Grèce antique</h3>
           <p>Site vitrine sur l'histoire de la Grèce antique.</p>
-          <button class="btn" onclick="window.location.href='https://codepen.io/naygour/pen/MWEVvLQ'"><i class="fab fa-codepen"></i>
-          En savoir plus</button>
+          <button class="btn" onclick="window.location.href='#popup_greece'"><i class="far fa-eye"></i> 
+            En savoir plus</button>
+          <div id="popup_greece" class="overlay">
+            <div class="popup">
+              <h3>Grèce antique</h3>
+              <a href="#greece" class="cross">&times;</a>
+              <p>L'idée du projet est de présenter la grèce dans l'antiquité avec trois grandes villes et les divinités qui les protègent, 
+                Athènes, Corinthe et Thèbes.
+                Ce projet nous permettait de mettre en avant les choses apprises sur l'HTML et le CSS
+              </br>
+                Pour ce projet, seulement l'utilisation de la programmation <strong>HTML/CSS</strong> était demandée.
+              </p>
+              <button class="btn" onclick="window.location.href='https://codepen.io/naygour/pen/MWEVvLQ'"><i
+                class="fab fa-codepen"></i> Visualiser le projet</button> 
+            </div>
+          </div>
         </div>
 
-        <div class="box">
+        <div class="box"  id="tacojo">
           <img src="/media/svg/tacojo.svg" alt="Projet Tacojo" class="svg-project">
           <h3>Tacojo</h3>
           <p>Application web pour gèrer plusieurs profil de patient atteint du VIH au Sénégal.</p>
-          <button class="btn" onclick="window.location.href='https://github.com/naygour/tacojo'"><i class="fab fa-github"></i>
+          <button class="btn" onclick="window.location.href='#popup_tacojo'"><i class="far fa-eye"></i>
           En savoir plus</button>
+          <div id="popup_tacojo" class="overlay">
+            <div class="popup">
+              <h3>Tacojo</h3>
+              <a href="#tacojo" class="cross">&times;</a>
+              <p>L'idée du projet est de remettre au goût du jour une application déjà existantes et d'ajouter de nouvelles fonctionnalitées.
+                </br>
+                Pour ce projet, l'utilisation de la programmation avec <strong>PhP/Symfony</strong> était demandée avec une base de donnée gérer par <strong>phpMyAdmin</strong>.
+              </p>
+              <div class="video">
+                <video width="400" controls>
+                  <source src="/media/video/tacojo.mp4" type="video/mp4">
+                  Désolé, votre navigateur ne prend pas en charge cette vidéo.
+                </video>
+              </div>
+              <button class="btn" onclick="window.location.href='https://github.com/naygour/tacojo'"><i class="fab fa-github"></i> Visualiser le projet</button>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
+        <div class="box" id="partylite">
           <img src="/media/svg/partylite.svg" alt="Projet PartyLite" class="svg-project">
           <h3>PartyLite</h3>
           <p>Réalisation d'un flyers pour une porte de vente de bougies parfumées pour une vendeuse de la marque PartyLite.</p>
-          <button class="btn" onclick="window.location.href='../assets/pdf/partylite.pdf'"><i class="fas fa-file-download"></i>
+          <button class="btn" onclick="window.location.href='#popup_partylite'"><i class="far fa-eye"></i>
             En savoir plus</button>
+          <div id="popup_partylite" class="overlay">
+            <div class="popup">
+              <h3>Tacojo</h3>
+              <a href="#partylite" class="cross">&times;</a>
+              <p>Une personne exerçant en dehors de son métier une activité de vente de bougie à domicile. 
+                Cette personne m'a contacté pour créer un flyer à l'occasion d'une journée porte ouverte pour découvrir les nouvelles gammes de la marque.
+                </br>
+                Avec pour thèmatique Noël et de mettre en avant les nouvelles bougies de la saison.
+              </br>
+                Pour ce projet, l'utilisation du logiciel <strong>PhotoXscape, Pages</strong> uniquement.
+              </p>
+              <button class="btn" onclick="window.location.href='../assets/pdf/partylite.pdf'"><i class="fas fa-file-download"></i> Visualiser le projet</button>
+            </div>
+          </div>
         </div>
 
-        <div class="box">
+        <div class="box" id="maraicher">
           <img src="/media/svg/tree.svg" alt="Projet Maraicher et jardinier" class="svg-project">
           <h3>Maraicher</h3>
-          <p>Application web en cours de création pour montrer les différentes offres qu'un jeune maraicher / jardinier peut vendre.</p>
-          <button class="btn" onclick="window.location.href='https://github.com/naygour/maraicher'"><i class="fab fa-github"></i>
+          <p>Future application web pour montrer les différents services qu'un jeune maraicher / jardinier peut offir.</p>
+          <button class="btn" onclick="window.location.href='#popup_maraicher'"><i class="far fa-eye"></i> 
             En savoir plus</button>
+          <div id="popup_maraicher" class="overlay">
+            <div class="popup">
+              <h3>Maraicher et Jardinier</h3>
+              <a href="#maraicher" class="cross">&times;</a>
+              <p>L'idée du prochain projet est de présenter les offres et services d'un jeune auto-entrepeneur dans le milieu de la jardinerie.
+                Avec pour idée de mettre en place en plus un système permettant de prendre un rendez-vous avec l'entreprise.
+                </br>
+                Ce projet n'a pas encore débuté, encore un peu de patience pour pouvoir le voir ...
+              </p>
+              <button class="btn" onclick="window.location.href='https://github.com/naygour/maraicher'"><i class="fab fa-github"></i>
+                 Visualiser le projet</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

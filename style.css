@@ -107,6 +107,65 @@
     font-weight: bold;
     font-style: italic;
   }
+  .video{
+    width:100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+    }
+  .video video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;left:0;
+  }
+
+/*======POPUP=======*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 6rem auto;
+  padding: 2rem;
+  background: #F7F3E9;
+  border-radius: 5px;
+  width: 45%;
+  z-index: 10;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.popup .cross {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #333;
+}
+.popup .cross:hover {
+  color: #E14548;
+}
+.video{
+  display:block;
+  width:480px;
+  margin:0 auto 35px auto;
+}
   @media screen and (min-width: 1000px) {
     main {
       width: 75%;
@@ -137,7 +196,20 @@
     }
     .profil img, .diplome img{
       height: 150px;
-    }   
+    }  
+    .popup {
+      margin: 5rem auto;
+      width: 70%;
+    } 
+    .name, #target{
+      font-size: 3rem;
+    }
+    .video{
+    width:auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    }
   }
 
 * {
@@ -285,12 +357,13 @@ nav {
 /*==================== ANIMATION LETTER==================*/
 
 .animation {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   position: relative;
   z-index: -1;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
   overflow: hidden;
   font-size: 5rem;
   font-family:'American Typewriter', serif;
@@ -331,6 +404,7 @@ nav {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: -1;
 }
 
 .swiper-slide {
