@@ -99,6 +99,14 @@
     height: 30%;
     width: 30%;
   }
+
+  .title-video {
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin :auto;
+    color: #333;
+  }
   .copyright, .download, .box{
     padding: 2rem; 
     text-align: center;
