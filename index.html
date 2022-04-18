@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link href="./style.css" rel="stylesheet">
 </head>
 
@@ -116,30 +117,32 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="/media/svg/html.svg" alt="HTML"/>
+            <img src="/media/svg/html.svg" alt="HTML" />
           </div>
           <div class="swiper-slide">
-          <img src="/media/svg/css.svg" alt="CSS"/>
+            <img src="/media/svg/css.svg" alt="CSS" />
           </div>
           <div class="swiper-slide">
-            <img src="/media/svg/js.svg" alt="JavaScript"/>
+            <img src="/media/svg/js.svg" alt="JavaScript" />
           </div>
           <div class="swiper-slide">
-            <img src="/media/svg/php.svg" alt="PhP"/>
+            <img src="/media/svg/php.svg" alt="PhP" />
           </div>
           <div class="swiper-slide">
-            <img src="/media/svg/mysql.svg" alt="Mysql"/>
+            <img src="/media/svg/mysql.svg" alt="Mysql" />
           </div>
           <div class="swiper-slide">
-            <img src="/media/svg/java.svg" alt="Java"/>
+            <img src="/media/svg/java.svg" alt="Java" />
           </div>
           <div class="swiper-slide">
-            <img src="/media/svg/python.svg" alt="Python"/>
+            <img src="/media/svg/python.svg" alt="Python" />
           </div>
           <div class="swiper-slide">
             <img src="/media/svg/sap_abap.svg" alt="SAP / ABAP" />
           </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
@@ -206,7 +209,7 @@
             En savoir plus</button>
           <div id="popup_partylite" class="overlay">
             <div class="popup">
-              <h3>Tacojo</h3>
+              <h3>PartyLite</h3>
               <a href="#partylite" class="cross">&times;</a>
               <p>Une personne exerçant en dehors de son métier une activité de vente de bougie à domicile. 
                 Cette personne m'a contacté pour créer un flyer à l'occasion d'une journée porte ouverte pour découvrir les nouvelles gammes de la marque.
@@ -238,6 +241,29 @@
               </p>
               <button class="btn" onclick="window.location.href='https://github.com/naygour/recette'"><i class="fab fa-github"></i>
                  Visualiser le projet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" id="forum">
+          <img src="/media/svg/forum.svg" alt="Projet de forum" class="svg-project">
+          <h3>Forum</h3>
+          <p>Réalisation d'une application web de forum où l'on peut poster n'importe quelle question où d'autres utilisateurs peuvent y répondre.</p>
+          <button class="btn" onclick="window.location.href='#popup_forum'"><i class="far fa-eye"></i>
+            En savoir plus</button>
+          <div id="popup_forum" class="overlay">
+            <div class="popup">
+              <h3>Forum</h3>
+              <a href="#forum" class="cross">&times;</a>
+              <p class="title-video">Prochainement : vidéo démonstrative</p>
+              <p>Projet utilisant le langage PhP ET MySql pour gèrer les données de l'application. Le but de cette application est de gèrer les utilisateur et les différentes questions qu'ils peuvent poster.
+                </br>
+                Nous pouvons accèder aux profils des différents utilisateurs ou de notre session. Nous pouvons voir, modifier et répondre aux diiférentes questions postées sur le site.
+                </br>
+                Pour ce projet, l'utilisation du logiciel <strong>Visual Studio Code, PhpMyAdmine et MAMP</strong>.
+              </p>
+              <button class="btn" onclick="window.location.href='../assets/pdf/partylite.pdf'"><i
+                  class="fas fa-file-download"></i> Visualiser le projet</button>
             </div>
           </div>
         </div>
