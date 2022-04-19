@@ -419,6 +419,7 @@ nav {
   background-size: cover;
   width: 300px;
   height: 300px;
+  overflow: hidden;
 }
 
 .swiper-slide img {

@@ -55,7 +55,7 @@ loop();
 
     var swiper = new Swiper(".mySwiper", {
       effect: "flip",
-    grabCursor: true,
+    grabCursor: false,
     pagination: {
       el: ".swiper-pagination",
         },
