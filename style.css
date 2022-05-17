@@ -141,6 +141,8 @@
   transition: opacity .4s;
   visibility: hidden;
   opacity: 0;
+  overflow-y: scroll !important;
+  overscroll-behavior: contain;
 }
 .overlay:target {
   visibility: visible;
